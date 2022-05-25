@@ -1,0 +1,32 @@
+.homepage__poki--cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+
+.page-buttos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 25px;
+}
+
+.page-btn {
+    padding: 5px 33px;
+    cursor: pointer;
+    background-color: rgb(245, 225, 48);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border: 2px solid blue;
+    border-radius: 4px;
+}
+
+.page-btn:disabled {
+    background-color: rgb(255, 255, 255);
+    border-color: gray;
+    cursor: not-allowed;
+}
