@@ -1,0 +1,88 @@
+.single__poki--box {
+    border: 2px solid rgb(0, 0, 0);
+    max-width: 1000px;
+    background: repeating-linear-gradient(#3ec2ff, #3ec2ff 49.9%, #3ec2ff 50.1%, rgb(252, 235, 142) 100%);
+    width: 100%;
+    border-radius: 8px;
+    padding-top: 50px;
+
+}
+
+.single__poki--box-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.single__poki--box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    flex-wrap: wrap;    
+}
+
+.img2 {
+    max-width: 330px;
+}
+
+.poki-id {
+    color: rgb(77, 77, 47);
+    font-size: 70px;
+    display: inline-block;
+    margin: 0;
+}
+
+.poki-name {
+    font-weight: 600;
+    font-size: 40px;
+    margin: 0;
+}
+
+
+.single__poki--box-right {
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+    
+}
+
+.single__poki--box-bmi {
+    display: flex;
+    gap:35px;
+    padding: 16px;
+}
+
+.w-stat {
+    padding-left: 13px;
+}
+
+.single__poki--box-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    padding: 10px 40px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    background-color: rgb(73, 73, 53);
+    color: white;
+    border-radius: 4px;
+    border: 2px solid black;
+}
+
+.moves{
+    margin-top: 80px;
+}
+
+
+.more-button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: 600;
+}
