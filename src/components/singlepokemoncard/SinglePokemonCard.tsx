@@ -51,7 +51,7 @@ const SinglePokemonCard:FC<SinglePokemonCardProps> = ({
             <h3>
               Abilities
               {abilitiess.map((ability) => (
-                <li key={Math.random() * 1000}>{ability}</li>
+                <li key={Math.random() * 1000}>{ability.charAt(0).toUpperCase() + ability.slice(1)}</li>
               ))}
             </h3>
           </div>
@@ -67,7 +67,7 @@ const SinglePokemonCard:FC<SinglePokemonCardProps> = ({
               <h3>Moves</h3>
               <p>
                 {moves.map((move) => (
-                  <li>{move}</li>
+                  <li>{move.charAt(0).toUpperCase() + move.slice(1)}</li>
                 ))}
 
               </p>
