@@ -9,7 +9,9 @@ export const imgBaseUrl = 'https://raw.githubusercontent.com/PokeAPI/sprites/mas
 
 const HomePage = () => {
   const [pokis, setPokis] = useState(0);
+
   const { data, isLoading, isSuccess } = useGetAllPokemonsQuery(`?offset=${pokis}&limit=20`);
+
   const navigate = useNavigate();
   return (
     <div className="container">
@@ -20,8 +22,21 @@ const HomePage = () => {
               {isLoading && <h2>...Loading</h2>}
             </div>
             <div className="page-buttos">
-              <button className="page-btn" disabled={pokis === 0} onClick={() => setPokis(pokis - 20)}>Prev</button>
-              <button className="page-btn" onClick={() => setPokis(pokis + 20)}>Next</button>
+              <button
+                className="page-btn"
+                disabled={pokis === 0}
+                onClick={() => setPokis(pokis - 20)}
+              >
+                Prev
+
+              </button>
+              <button
+                className="page-btn"
+                onClick={() => setPokis(pokis + 20)}
+              >
+                Next
+
+              </button>
             </div>
             <div className="homepage__poki--cards">
               {data && isSuccess && data.results.map(({ name, url }) => {
